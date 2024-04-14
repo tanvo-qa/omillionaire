@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.TC_01_SignIn">
+      <class name="selenium.OM_Dev">
         <methods>
-          <include name="TC_01_SignInWithGoogle"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="openSignInPage"/>
         </methods>
-      </class> <!-- selenium.TC_01_SignIn -->
+      </class> <!-- selenium.OM_Dev -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
