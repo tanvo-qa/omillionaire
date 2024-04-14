@@ -5,7 +5,7 @@
 
 		<classes>
 		
-			<class name="selenium.All_Recipes_Production" />
+			<class name="selenium.TC_01_SignIn" />
 					
 		</classes>
 
