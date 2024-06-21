@@ -6,7 +6,7 @@
       <class name="selenium.OM_Dev">
         <methods>
           <include name="beforeClass"/>
-          <include name="updateProfile"/>
+          <include name="openSignUpPage"/>
         </methods>
       </class> <!-- selenium.OM_Dev -->
     </classes>

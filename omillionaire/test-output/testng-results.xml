@@ -1,28 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-11T15:14:16 ICT" name="Default suite" finished-at="2024-06-11T15:19:43 ICT" duration-ms="326767">
+  <suite started-at="2024-06-18T23:49:47 ICT" name="Default suite" finished-at="2024-06-18T23:52:15 ICT" duration-ms="148191">
     <groups>
     </groups>
-    <test started-at="2024-06-11T15:14:16 ICT" name="Default test" finished-at="2024-06-11T15:19:43 ICT" duration-ms="326767">
+    <test started-at="2024-06-18T23:49:47 ICT" name="Default test" finished-at="2024-06-18T23:52:15 ICT" duration-ms="148191">
       <class name="selenium.OM_Dev">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:selenium.OM_Dev@449a4f23]" started-at="2024-06-11T15:14:16 ICT" name="beforeClass" finished-at="2024-06-11T15:14:25 ICT" duration-ms="8381" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:selenium.OM_Dev@6e9175d8]" started-at="2024-06-18T23:49:47 ICT" name="beforeClass" finished-at="2024-06-18T23:50:45 ICT" duration-ms="58188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="openSignInPage()[pri:0, instance:selenium.OM_Dev@449a4f23]" started-at="2024-06-11T15:14:25 ICT" name="openSignInPage" finished-at="2024-06-11T15:16:35 ICT" duration-ms="130316" status="PASS">
+        <test-method signature="openSignUpPage()[pri:0, instance:selenium.OM_Dev@6e9175d8]" started-at="2024-06-18T23:50:45 ICT" name="openSignUpPage" finished-at="2024-06-18T23:51:31 ICT" duration-ms="45862" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-button primary btn-secondary' and text() =' accept all ']"}
+  (Session info: chrome=125.0.6422.176)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'tanhungvo-2.local', ip: '2405:4802:7051:4bd0:ffff:ffff:ffff:fffc%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/dq/1qmbj9s11rl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49584}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d0e06f175932b9a5b6952a8cd0c713
+*** Element info: {Using=xpath, value=//button[@class='btn btn-button primary btn-secondary' and text() =' accept all ']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-button primary btn-secondary' and text() =' accept all ']"}
+  (Session info: chrome=125.0.6422.176)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'tanhungvo-2.local', ip: '2405:4802:7051:4bd0:ffff:ffff:ffff:fffc%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/dq/1qmbj9s11rl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49584}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d0e06f175932b9a5b6952a8cd0c713
+*** Element info: {Using=xpath, value=//button[@class='btn btn-button primary btn-secondary' and text() =' accept all ']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at selenium.OM_Dev.openSignUpPage(OM_Dev.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openSignInPage -->
-        <test-method signature="signInByMobile()[pri:0, instance:selenium.OM_Dev@449a4f23]" started-at="2024-06-11T15:16:35 ICT" name="signInByMobile" finished-at="2024-06-11T15:17:09 ICT" duration-ms="33450" status="PASS">
+        </test-method> <!-- openSignUpPage -->
+        <test-method signature="signUpByMobile()[pri:0, instance:selenium.OM_Dev@6e9175d8]" started-at="2024-06-18T23:51:31 ICT" name="signUpByMobile" finished-at="2024-06-18T23:52:15 ICT" duration-ms="44105" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signInByMobile -->
-        <test-method signature="updateProfile()[pri:0, instance:selenium.OM_Dev@449a4f23]" started-at="2024-06-11T15:17:09 ICT" name="updateProfile" finished-at="2024-06-11T15:19:43 ICT" duration-ms="154584" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateProfile -->
+        </test-method> <!-- signUpByMobile -->
       </class> <!-- selenium.OM_Dev -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
